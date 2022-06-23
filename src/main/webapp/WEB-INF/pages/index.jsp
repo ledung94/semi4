@@ -10,7 +10,6 @@
         <h1>Hello World!</h1>
         <table>
             <tr>
-                <th>ID</th>
                 <th>Roll</th>
                 <th>Name</th>
                 <th>Class</th>
@@ -18,11 +17,10 @@
             </tr>
             <c:forEach items="${students}" var="student">
                 <tr>
-                    <td>${student.id}</td>
                     <td>${student.roll}</td>
                     <td>${student.name}</td>
                     <td>${student.className}</td>
-                    <td><a href=/edit/${student.id}>Edit</a> | <a href=/delete/${student.id}>Delete</a></td>
+                    <td><a href=/edit/${student.roll}>Edit</a> | <a href=/delete/${student.roll}>Delete</a></td>
                 </tr>
             </c:forEach>
         </table>

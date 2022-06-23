@@ -10,29 +10,18 @@ import javax.persistence.Table;
 public class Student {
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", roll=" + roll + ", className=" + className + "]";
+		return "Student [ name=" + name + ", roll=" + roll + ", className=" + className + "]";
 	}
-
-	@Id
-	@Column(name = "id")
-	private Integer id;
 
 	@Column(name = "name")
 	private String name;
 
+	@Id
 	@Column(name = "roll")
 	private String roll;
 
 	@Column(name = "className")
 	private String className;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getName() {
 		return name;
